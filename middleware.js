@@ -4,7 +4,7 @@ const cors = require("cors");
 const applyMiddleware = (app) => {
   app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://accredian-eta.vercel.app",
       credentials: true,
     })
   );
