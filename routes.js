@@ -30,7 +30,7 @@ const routes = (app) => {
         from: process.env.GMAIL_USER,
         to: referrerEmail,
         subject: "Referral Submitted",
-        text: `Thank you for referring ${refereeName}! Here is the referral link: https://accredian.pages.dev`,
+        text: `Thank you for referring ${refereeName}! Here is the referral link: https://accredian-eta.vercel.app/`,
       };
 
       transporter.sendMail(referrerMailOptions, (error, info) => {
@@ -44,7 +44,7 @@ const routes = (app) => {
         from: process.env.GMAIL_USER,
         to: refereeEmail,
         subject: "You've been referred!",
-        text: `${referrerName} has referred you. Here is the referral link: https://accredian.pages.dev`,
+        text: `${referrerName} has referred you. Here is the referral link: https://accredian-eta.vercel.app/`,
       };
 
       transporter.sendMail(refereeMailOptions, (error, info) => {
